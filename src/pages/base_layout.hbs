@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+{{#block "head"}}
+    <head>
+        {{#block "title"}}
+            <title>{{title}}</title>
+        {{/block}}
+        <link href="styles/base_layout.css" rel="stylesheet" />
+        {{#block "styles"}}
+            {{#each stylesheets}}
+                <link href="{{this}}" rel="stylesheet" />
+            {{/each}}
+        {{/block}}
+    </head>
+{{/block}}
+
+{{#block "body"}}
+    <body>
+    {{#block "main"}}
+    {{/block}}
+
+    {{#block "scripts"}}
+        {{#each scripts}}
+            <script defer src="{{this}}"></script>
+        {{/each}}
+    {{/block}}
+    </body>
+{{/block}}
+</html>

@@ -1,0 +1,50 @@
+---
+stylesheets:
+- ./styles/profile.css
+---
+{{#extend "base_layout"}}
+    {{#content "main"}}
+        <main>
+            <div class="profile-container">
+                <div class="profile-change-avatar-out">
+                    <div class="profile-change-avatar-in">
+                        <p class="profile-change-avatar-text">изменить<br>аватар</p>
+                    </div>
+                </div>
+                <div class="profile-info-item">
+                    <span class="profile-info-item-label">почта</span>
+                    <span class="profile-info-item-value">ivan@yandex.ru</span>
+                </div>
+                <hr />
+                <div class="profile-info-item">
+                    <span class="profile-info-item-label">логин</span>
+                    <span class="profile-info-item-value">ivan</span>
+                </div>
+                <hr />
+                <div class="profile-info-item">
+                    <span class="profile-info-item-label">имя</span>
+                    <span class="profile-info-item-value">Иван</span>
+                </div>
+                <hr />
+                <div class="profile-info-item">
+                    <span class="profile-info-item-label">фамилия</span>
+                    <span class="profile-info-item-value">Иванов</span>
+                </div>
+                <hr />
+                <div class="profile-info-item">
+                    <span class="profile-info-item-label">имя в чате</span>
+                    <span class="profile-info-item-value">-=IvAn-=-ViP=-</span>
+                </div>
+                <hr />
+                <div class="profile-info-item">
+                    <span class="profile-info-item-label">телефон</span>
+                    <span class="profile-info-item-value">+7 (999) 999 99 99</span>
+                </div>
+                <div class="profile-actions-container">
+                    <button class="profile-action profile-action-password">сменить пароль</button>
+                    <button class="profile-action profile-action-quit">выйти</button>
+                </div>
+            </div>
+        </main>
+    {{/content}}
+{{/extend}}

@@ -1,0 +1,17 @@
+module.exports = {
+  grey1: '#242424',
+  grey2: '#3B3B3B',
+  grey3: '#525252',
+  grey4: '#696969',
+  grey5: '#0D0D0D',
+  grey6: '#F7F7F7',
+  green1: '#40BF6A',
+  green2: '#81D59D',
+  green3: '#68BB84',
+  green4: '#B2E6C3',
+  green5: '#297A44',
+  red: '#DF2040',
+  yellow: '#EBB513',
+  white: '#FFFFFF',
+  black: '#000000',
+}

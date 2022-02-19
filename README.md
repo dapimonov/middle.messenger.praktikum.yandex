@@ -1,1 +1,16 @@
-https://github.com/dapimonov/middle.messenger.praktikum.yandex/pull/2
+### Личный проект "Чат"
+
+---
+
+Верстка страниц без модальных окон и прочих штук, требующих взаимодействия с пользователем по ТЗ 1-го спринта.
+
+Процесс запуска приложения локально:
+- `git pull`
+- `npm install`
+- `npm run start` — запуск приложения Express на 3000 порту
+
+Для запуска Parcel для разработки:
+- `npm run dev`
+
+Ссылка на задеплоенные страницы на Netlify:
+https://6210f00216fb8ce1acac33fd--optimistic-banach-848c6c.netlify.app/
