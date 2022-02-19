@@ -1,0 +1,29 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-title {
+    color: $grey6;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $grey2;
+    margin: auto;
+    padding: 30px;
+    border-radius: 24px;
+    width: 340px;
+    height: 650px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,99 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid $green1;
+    margin: 10px 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.profile-change-avatar-out {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../images/person.png');
+    transition: background-color 0.2s;
+}
+
+.profile-change-avatar-in {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.profile-change-avatar-in:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.profile-change-avatar-text {
+    margin: auto;
+    text-align: center;
+    color: $grey6;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.profile-info-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: $grey6;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.profile-info-item-label {
+    font-weight: 600;
+}
+
+.profile-info-item-value {
+    font-weight: normal;
+}
+
+.profile-actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.profile-action {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.profile-action-password {
+    color: $green1;
+}
+
+.profile-action-quit {
+    color: $red;
+}

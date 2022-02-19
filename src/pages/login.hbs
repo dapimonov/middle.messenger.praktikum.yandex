@@ -1,0 +1,23 @@
+---
+stylesheets:
+- ./styles/login.css
+- ../components/styles/input.css
+- ../components/styles/button.css
+---
+{{#extend "base_layout"}}
+    {{#content "main"}}
+        <main>
+            <div class="login-form-container">
+                <div>
+                    <h1 class="login-title">вход</h1>
+                    {{> input type="input" name="login" placeholder="введите логин" label="логин" required=true}}
+                    {{> input type="password" name="password" placeholder="введите пароль"  label="пароль" required=true}}
+                </div>
+                <div class="buttons-container">
+                    {{> button text="войти"}}
+                    <a href="signup.hbs">нет аккаунта?</a>
+                </div>
+            </div>
+        </main>
+    {{/content}}
+{{/extend}}

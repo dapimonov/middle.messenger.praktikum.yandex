@@ -1,0 +1,18 @@
+---
+stylesheets:
+- ./styles/index.css
+---
+{{#extend "base_layout"}}
+    {{#content "main"}}
+        <main>
+            <div class="links-container">
+                <p><a href="./login.hbs">логин</a></p>
+                <p><a href="./signup.hbs">регистрация</a></p>
+                <p><a href="./profile.hbs">профиль</a></p>
+                <p><a href="./chats.hbs">чаты</a></p>
+                <p><a href="./error.hbs">500</a></p>
+                <p><a href="./not_found.hbs">404</a></p>
+            </div>
+        </main>
+    {{/content}}
+{{/extend}}

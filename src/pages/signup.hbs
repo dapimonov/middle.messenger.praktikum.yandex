@@ -1,0 +1,25 @@
+---
+stylesheets:
+- ./styles/signup.css
+- ../components/styles/input.css
+- ../components/styles/button.css
+---
+{{#extend "base_layout"}}
+    {{#content "main"}}
+        <main>
+            <div class="signup-form-container">
+                <div>
+                    <h1 class="signup-title">регистрация</h1>
+                    {{> input type="input" name="login" placeholder="введите логин" label="логин" required=true}}
+                    {{> input type="input" name="email" placeholder="введите e-mail" label="e-mail" required=true}}
+                    {{> input type="input" name="first_name" placeholder="введите имя" label="имя" required=true}}
+                    {{> input type="input" name="second_name" placeholder="введите фамилию" label="фамилия" required=true}}
+                    {{> input type="input" name="phone" placeholder="введите телефон" label="телефон" required=true}}
+                    {{> input type="password" name="password" placeholder="введите пароль"  label="пароль" required=true}}
+                    {{> input type="password" name="password_repeat" placeholder="повторите пароль"  label="пароль (еще раз)" required=true}}
+                </div>
+                {{> button text="зарегистрироваться"}}
+            </div>
+        </main>
+    {{/content}}
+{{/extend}}
