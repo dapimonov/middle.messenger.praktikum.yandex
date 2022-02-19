@@ -26,7 +26,8 @@
   },
   "dependencies": {
     "express": "^4.17.2",
-    "handlebars": "^4.7.7"
+    "handlebars": "^4.7.7",
+    "postcss": "^8.4.6"
   },
   "browserslist": [
     "last 2 versions"
